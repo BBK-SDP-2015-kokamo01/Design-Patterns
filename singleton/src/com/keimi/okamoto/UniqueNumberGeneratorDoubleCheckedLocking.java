@@ -6,7 +6,7 @@ package com.keimi.okamoto;
 public class UniqueNumberGeneratorDoubleCheckedLocking {
 
     private static UniqueNumberGeneratorDoubleCheckedLocking uniqueNumberGeneratorDoubleCheckedLocking = null;
-    private static int number;
+    private int number;
 
     private UniqueNumberGeneratorDoubleCheckedLocking() {
     }
@@ -24,7 +24,7 @@ public class UniqueNumberGeneratorDoubleCheckedLocking {
         }
     }
 
-    public static int getUniqueNumber() {
+    public int getUniqueNumber() {
         return number += 1;
     }
 }

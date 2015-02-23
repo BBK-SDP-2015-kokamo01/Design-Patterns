@@ -14,6 +14,7 @@ public class Main {
         System.out.println(uniqueNumberGenerator2.getUniqueNumber());
         System.out.println(uniqueNumberGenerator2.getUniqueNumber());
 
+
         //Double checked locking
         UniqueNumberGeneratorDoubleCheckedLocking a1 = UniqueNumberGeneratorDoubleCheckedLocking.getInstance();
         UniqueNumberGeneratorDoubleCheckedLocking a2 =UniqueNumberGeneratorDoubleCheckedLocking.getInstance();

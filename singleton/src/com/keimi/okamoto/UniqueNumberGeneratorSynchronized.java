@@ -8,7 +8,7 @@ package com.keimi.okamoto;
 public class UniqueNumberGeneratorSynchronized {
 
     private static UniqueNumberGeneratorSynchronized uniqueNumberGenerator = null;
-    private static int number = 0;
+    private int number = 0;
 
     private UniqueNumberGeneratorSynchronized() {
     }
@@ -20,7 +20,7 @@ public class UniqueNumberGeneratorSynchronized {
         //Once this has been created it does not need to be checked for synchronization but
         //as the whole method is synchronised it will keep doing so, resulting in unnecessary
         //overhead.
-        return new UniqueNumberGeneratorSynchronized();
+        return uniqueNumberGenerator = new UniqueNumberGeneratorSynchronized();
     }
 
     public int getUniqueNumber() {
