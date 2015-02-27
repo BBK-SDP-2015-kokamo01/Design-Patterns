@@ -1,8 +1,14 @@
+
+
 class ClassRoom {
 	public void setupRoom() {
 		//do something
 	}
 }
+
+
+
+
 
 
 class School {
@@ -11,14 +17,63 @@ class School {
 	//School is dependent on class room, this is to be said that the classes
 	//are tightly coupled. Changed to ClassRoom.class can protentially breal
 	//School.class
-	public School() {
-		classRoom = new classRoom();
+	public School(IRoom classRoom) {
+		classRoom = new ClassRoom();
 	} 
 
 	public doSomethingWithRoom() {
 		classRoom.setupRoom();
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //Soution! 
@@ -30,7 +85,7 @@ public Interface IRoom {
 	}
 }
 
-class ClassRoom : IRoom {
+class ClassRoom implemts IRoom {
 	public void setupRoom() {
 		//do something
 	}
@@ -47,6 +102,10 @@ class School {
 		classRoom.setupRoom();
 	}
 }
+
+
+
+
 
 //Second, remove the creation of ClassRoom from School! No 'new'!!
 public Interface IRoom {

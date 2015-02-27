@@ -17,6 +17,9 @@ public class ShapeEditor {
 	}
 }
 
+
+
+
 public class Shape { 
 	int type; 
 }
@@ -33,6 +36,9 @@ public class Circle extends Shape {
 		super.type = 2;
 	}
 }
+
+
+
 
 //With this code you will have to understand what ShapeEditor.class does (it's simple here but imagine if it was more complex code)
 //You will have to modify the ShapeEditor.class
@@ -53,7 +59,7 @@ public class Shape {
 	abstract void draw();
 
 public class Rectangle extends Shape { 
-	public Rectangel() {
+	public void draw() {
 	}
 }
 

@@ -4,6 +4,10 @@ public class Tiger extends Animal {
 
     @Override
     public String makeNoise() {
-        return "Growl";
+        return super.makeNoise();
+    }
+
+    public String method(){
+        return super.makeNoise();
     }
 }
