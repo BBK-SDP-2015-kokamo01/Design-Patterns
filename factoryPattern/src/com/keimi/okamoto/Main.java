@@ -6,7 +6,7 @@ public class Main {
         //This violates the open/closed principal as the creation of the object depends
         //on the string goint into the class 'AnimalFactory'
         Animal tiger = AnimalFactory.createAnimal("Tiger");
-        Tiger a = (Tiger)tiger;
+        Tiger a = (Tiger) tiger;
         System.out.println(a.method());
 
 
@@ -15,5 +15,11 @@ public class Main {
         ReflectionAnimalFactory reflectionAnimalFactory = new ReflectionAnimalFactory();
         Animal dog = reflectionAnimalFactory.getInstance("Dog");
         System.out.println(dog.makeNoise());
+
+        ProductFactory productFactory = ProductFactory.getInstance();
+        Cake cake = (Cake) productFactory.createProduct("cake");
+        Salad salad = (Salad) productFactory.createProduct("Salad");
+        salad.addIngredients("Lettuce", "Tomato", "Chicken", "Croutons");
+        System.out.println(salad.toss());
     }
 }
