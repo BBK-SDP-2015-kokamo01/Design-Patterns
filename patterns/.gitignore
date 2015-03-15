@@ -1,2 +1,6 @@
 *.iml
 .idea
+.gradle
+patterns.iws
+patterns.ipr
+patterns.iml
