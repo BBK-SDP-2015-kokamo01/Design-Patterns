@@ -1,4 +1,4 @@
-package com.keimi.okamoto.strategyPattern;
+package com.keimi.okamoto.strategyPattern.StrategyPattern;
 
 public class Animal {
 

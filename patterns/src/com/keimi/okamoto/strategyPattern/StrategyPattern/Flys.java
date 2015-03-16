@@ -1,4 +1,4 @@
-package com.keimi.okamoto.strategyPattern;
+package com.keimi.okamoto.strategyPattern.StrategyPattern;
 
 // The interface is implemented by many other
 // subclasses that allow for many types of flying

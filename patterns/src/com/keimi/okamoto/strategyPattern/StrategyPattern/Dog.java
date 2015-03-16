@@ -1,4 +1,4 @@
-package com.keimi.okamoto.strategyPattern;
+package com.keimi.okamoto.strategyPattern.StrategyPattern;
 
 public class Dog extends Animal {
 
@@ -6,11 +6,10 @@ public class Dog extends Animal {
         System.out.println("Dug a hole");
     }
 
-    public Dog() {
-        super();
+    public Dog(Flys flyingType) {
+        super(); //Doesn't need to be here. Implicit call happening! :)
+        this.flyingType = flyingType;
         setSound("Bark");
-        flyingType = new CantFly();
-
     }
 
 	/* BAD
